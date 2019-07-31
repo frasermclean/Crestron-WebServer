@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crestron-WebServer", "Crestron-WebServer\Crestron-WebServer.csproj", "{B0A63CC7-9A98-4D7F-AB3B-8925B3824B12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0A63CC7-9A98-4D7F-AB3B-8925B3824B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A63CC7-9A98-4D7F-AB3B-8925B3824B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A63CC7-9A98-4D7F-AB3B-8925B3824B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A63CC7-9A98-4D7F-AB3B-8925B3824B12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
