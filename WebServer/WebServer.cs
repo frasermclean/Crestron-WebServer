@@ -54,7 +54,30 @@ namespace FM.WebServer
             }
             catch (Exception ex)
             {
-                Trace("StartListening() exeception caught: " + ex.Message);
+                Trace("StartListening() exception caught: " + ex.Message);
+                return false;
+            }
+        }
+        public bool StopListening()
+        {
+            try
+            {
+                if (server != null)
+                {
+                    server.Close();
+                    server.Dispose();
+                    server = null;
+                    return true;
+                }
+                else
+                {
+                    Trace("StopListening() server object is already null. No action taken.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Trace("StopListening() exception caught: " + ex.Message);
                 return false;
             }
         }
