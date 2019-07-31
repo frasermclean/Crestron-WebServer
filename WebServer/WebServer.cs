@@ -3,7 +3,7 @@ using System.Text;
 using Crestron.SimplSharp;
 using Crestron.SimplSharp.Net.Http;
 
-namespace WebServer
+namespace FM.WebServer
 {
     public class WebServer
     {
