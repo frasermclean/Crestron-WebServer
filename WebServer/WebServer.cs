@@ -36,6 +36,8 @@ namespace FM.WebServer
             {
                 if (server == null)
                 {
+                    Trace("StartListening() Creating new HttpServer object.");
+
                     server = new HttpServer();
                     server.Port = port;
                     server.ServerName = ServerName;
