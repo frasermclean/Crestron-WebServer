@@ -49,6 +49,7 @@ namespace TestSystem
                 // web server component
                 webServer = new WebServer(Port);
                 webServer.TraceEnabled = true;
+                webServer.RequestCallback += new WebServerRequestDelegate(WebServerRequestCallback);
                 if (webServer.StartListening())
                     Trace("InitializeSystem() web server started successfully.");
                 else
@@ -68,6 +69,13 @@ namespace TestSystem
         {
             if (TraceEnabled)
                 CrestronConsole.PrintLine(String.Format("[{0}] {1}", TraceName, message.Trim()));
+        }
+        #endregion
+
+        #region Event callbacks
+        void WebServerRequestCallback(string path)
+        {
+            Trace("WebServerRequestCallback() received request for path: " + path);
         }
         #endregion
     }
